@@ -1,0 +1,70 @@
+<mat-toolbar>
+  <span class="spacer">
+    <img src="../../../../assets/images/logo.png" alt="Logo" />
+    <span class="logo-title">{{ title | uppercase }}</span>
+  </span>
+  <!--
+  <button
+    mat-flat-button
+    color="primary"
+    routerLink="home"
+    routerLinkActive="active"
+  >
+    Home
+  </button>
+  <button
+    mat-flat-button
+    color="primary"
+    routerLink="admin"
+    routerLinkActive="active"
+  >
+    Admin
+  </button>
+-->
+  <button mat-icon-button aria-label="Notification alert">
+    <mat-icon>notifications_none</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Hidden menu dashboard"
+  >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="home" routerLinkActive="active">
+      <mat-icon>home</mat-icon>
+      <span> Home </span>
+    </button>
+    <button mat-menu-item routerLink="admin" routerLinkActive="active">
+      <mat-icon>admin_panel_settings</mat-icon>
+      <span>Admin</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
+  <img src="../../../../assets/images/user-profile.png" alt="profile" />
+</mat-toolbar>
+<main>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+      <ul>
+        <li>
+          <a routerLink="home" routerLinkActive="active">
+            <mat-icon>home</mat-icon>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li routerLink="admin" routerLinkActive="active">
+          <a routerLink="home" routerLinkActive="active">
+            <mat-icon>admin_panel_settings</mat-icon>
+            <span>Admin</span>
+          </a>
+        </li>
+      </ul>
+    </mat-sidenav>
+    <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+  </mat-sidenav-container>
+</main>
