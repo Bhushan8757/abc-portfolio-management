@@ -49,6 +49,8 @@ run `npm i -D webpack-bundle-analyzer` and update package.json file with `"analy
 
 ## Project Architecture
 
-Our project will use 2 main part to run application.
+## Our project will use 2 main part to run application.
+
 1] Eager part: That will start with main.ts and will contain the AppModule with top-level routes and CoreModule with basic layout and all the core singleton services which will be used throughout the whole application.
+
 2] lazy loaded [routing]: That will be loaded as a result of user navigation to these features. The lazy modules will also import SharedModule.
