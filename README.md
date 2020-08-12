@@ -54,3 +54,7 @@ run `npm i -D webpack-bundle-analyzer` and update package.json file with `"analy
 1] Eager part: That will start with main.ts and will contain the AppModule with top-level routes and CoreModule with basic layout and all the core singleton services which will be used throughout the whole application.
 
 2] lazy loaded [routing]: That will be loaded as a result of user navigation to these features. The lazy modules will also import SharedModule.
+
+## External data
+
+Create gist to get json data `https://gist.githubusercontent.com/Bhushan8757/1f84f7a9c6df91bdfdf6026c635155dc/raw/dbccc0d39188b99bda098d8676b48a5e00a3ae27/stock_profile.json`
