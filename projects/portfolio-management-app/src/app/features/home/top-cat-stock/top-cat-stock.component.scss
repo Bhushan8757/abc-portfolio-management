@@ -1,0 +1,21 @@
+.show_records {
+  display: none;
+  position: absolute;
+  left: 100px;
+  width: 80%;
+}
+.prev_records:hover {
+  cursor: pointer;
+
+  .show_records {
+    display: block;
+  }
+}
+.inner_table {
+  width: 100%;
+  text-align: center;
+
+  th {
+    background: #ccc;
+  }
+}

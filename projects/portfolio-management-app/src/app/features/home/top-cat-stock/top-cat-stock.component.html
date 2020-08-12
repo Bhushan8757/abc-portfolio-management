@@ -1,0 +1,61 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="position">
+    <mat-header-cell *matHeaderCellDef> Company Name </mat-header-cell>
+    <mat-cell class="prev_records" *matCellDef="let element">
+      {{ element.company_name }}
+      <div class="show_records">
+        <mat-card>
+          <div>
+            <h3>{{ element.company_name }}</h3>
+            <table class="inner_table">
+              <tr>
+                <th>Date</th>
+                <th>LTP</th>
+                <th>Change</th>
+                <th>%Change</th>
+              </tr>
+              <tr>
+                <td>{{ element.past_performance[0].date }}</td>
+                <td>{{ element.past_performance[0].ltp }}</td>
+                <td>{{ element.past_performance[0].change }}</td>
+                <td>{{ element.past_performance[0].per_change }}</td>
+              </tr>
+              <tr>
+                <td>{{ element.past_performance[1].date }}</td>
+                <td>{{ element.past_performance[1].ltp }}</td>
+                <td>{{ element.past_performance[1].change }}</td>
+                <td>{{ element.past_performance[1].per_change }}</td>
+              </tr>
+              <tr>
+                <td>{{ element.past_performance[2].date }}</td>
+                <td>{{ element.past_performance[2].ltp }}</td>
+                <td>{{ element.past_performance[2].change }}</td>
+                <td>{{ element.past_performance[2].per_change }}</td>
+              </tr>
+            </table>
+          </div>
+        </mat-card>
+      </div>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> LTP </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.ltp }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="weight">
+    <mat-header-cell *matHeaderCellDef> Change </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      {{ element.change }}
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="symbol">
+    <mat-header-cell *matHeaderCellDef> %Change </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.per_change }} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
