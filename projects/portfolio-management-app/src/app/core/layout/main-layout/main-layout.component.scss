@@ -1,67 +1,21 @@
 .spacer {
-  flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 button {
-  margin: 0 10px;
+	margin: 0 10px;
 }
 
 .logo-title {
-  padding: 0.2rem;
-  font-size: 12px;
-  position: fixed;
+	padding: 0.2rem;
+	font-size: 12px;
+	position: fixed;
 }
 
 mat-toolbar {
-  box-shadow: 2px 2px 2px #ccc;
+	box-shadow: 2px 2px 2px #ccc;
 }
 
 main {
-  padding: 20px 0;
-}
-
-.mat-sidenav {
-  position: fixed;
-  height: 100%;
-  top: 4.3rem;
-  width: 3.2rem;
-  transition: width 0.2s;
-
-  &:hover {
-    width: 12rem;
-    transition-timing-function: ease-in-out;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-
-    li {
-      list-style: none;
-      background: rgb(231, 231, 240);
-      padding: 0.6rem;
-      margin: 0.1rem;
-      width: 10rem;
-      border-right: 5px solid rgb(15, 8, 105);
-
-      mat-icon {
-        margin: 0 8px;
-      }
-
-      &:hover {
-        background: rgb(37, 25, 102);
-        color: #fff;
-      }
-
-      &.active {
-        filter: brightness(120%);
-      }
-
-      a {
-        text-decoration: none;
-        color: rgb(105, 70, 187);
-        font-size: large;
-      }
-    }
-  }
+	padding: 20px 0;
 }

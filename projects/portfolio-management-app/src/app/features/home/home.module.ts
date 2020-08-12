@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { MatCardModule } from '@angular/material/card';
+import { StockChartComponent } from './stock-chart/stock-chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
-  declarations: [HomeComponent],
-  imports: [CommonModule, HomeRoutingModule],
+  declarations: [HomeComponent, StockChartComponent],
+  imports: [HomeRoutingModule, FlexLayoutModule, MatCardModule, ChartsModule],
 })
 export class HomeModule {}

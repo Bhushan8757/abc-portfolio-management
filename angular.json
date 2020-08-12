@@ -27,9 +27,7 @@
               "projects/portfolio-management-app/src/favicon.ico",
               "projects/portfolio-management-app/src/assets"
             ],
-            "styles": [
-              "projects/portfolio-management-app/src/styles.scss"
-            ],
+            "styles": ["projects/portfolio-management-app/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -91,9 +89,7 @@
               "projects/portfolio-management-app/src/favicon.ico",
               "projects/portfolio-management-app/src/assets"
             ],
-            "styles": [
-              "projects/portfolio-management-app/src/styles.scss"
-            ],
+            "styles": ["projects/portfolio-management-app/src/styles.scss"],
             "scripts": []
           }
         },
@@ -105,9 +101,7 @@
               "projects/portfolio-management-app/tsconfig.spec.json",
               "projects/portfolio-management-app/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -123,6 +117,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "portfolio-management-app"
 }

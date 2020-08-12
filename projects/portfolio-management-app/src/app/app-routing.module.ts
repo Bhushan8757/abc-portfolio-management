@@ -18,11 +18,6 @@ const routes: Routes = [
       import('./features/admin/admin.module').then((m) => m.AdminModule),
   },
   {
-    path: 'admin',
-    loadChildren: () =>
-      import('./features/admin/admin.module').then((m) => m.AdminModule),
-  },
-  {
     path: '**',
     redirectTo: 'home',
   },

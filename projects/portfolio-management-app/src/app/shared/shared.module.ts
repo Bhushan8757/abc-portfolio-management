@@ -4,10 +4,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
 import { RouterModule } from '@angular/router';
-import { StockTableComponent } from './stock-table/stock-table.component';
 
 @NgModule({
-  declarations: [StockTableComponent],
+  declarations: [],
   imports: [
     // vendor
     CommonModule,

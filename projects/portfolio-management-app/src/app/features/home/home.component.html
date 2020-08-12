@@ -1,1 +1,39 @@
-<p>home works!</p>
+<!-- <div class="parent" fxLayout="row" fxLayout.sm="column">
+  <div fxFlex="50%" class="left"><mat-card>Simple card</mat-card></div>
+  <div fxFlex="45%" class="right"><mat-card>Simple card</mat-card></div>
+  <div fxFlex="90%" class="left"><mat-card>Simple card</mat-card></div>
+</div> -->
+<div
+  class="container"
+  fxLayout
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px"
+  fxLayoutGap.xs="15px"
+>
+  <div fxFlex="50%" fxFlexAlign.lt-md="100%">
+    <mat-card>Simple card</mat-card>
+  </div>
+  <div fxFlex="50%" fxFlexAlign.lt-md="100%">
+    <mat-card> <abc-pm-stock-chart></abc-pm-stock-chart> </mat-card>
+  </div>
+</div>
+
+<div
+  class="container"
+  fxLayout
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="10px"
+  fxLayoutGap.xs="0"
+>
+  <div
+    fxFlex="100%"
+    fxFlex.sm="100"
+    fxFlexOffset="0"
+    fxFlexAlign.lt-md="100%"
+    fxFlexOffset.xs="0"
+  >
+    <mat-card>Simple card</mat-card>
+  </div>
+</div>

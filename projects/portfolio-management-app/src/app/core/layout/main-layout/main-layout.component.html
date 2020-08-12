@@ -1,9 +1,9 @@
-<mat-toolbar>
+<!--<mat-toolbar>
   <span class="spacer">
     <img src="../../../../assets/images/logo.png" alt="Logo" />
     <span class="logo-title">{{ title | uppercase }}</span>
   </span>
-  <!--
+
   <button
     mat-flat-button
     color="primary"
@@ -20,7 +20,7 @@
   >
     Admin
   </button>
--->
+
   <button mat-icon-button aria-label="Notification alert">
     <mat-icon>notifications_none</mat-icon>
   </button>
@@ -48,23 +48,6 @@
   <img src="../../../../assets/images/user-profile.png" alt="profile" />
 </mat-toolbar>
 <main>
-  <mat-sidenav-container class="example-container">
-    <mat-sidenav mode="side" opened>
-      <ul>
-        <li>
-          <a routerLink="home" routerLinkActive="active">
-            <mat-icon>home</mat-icon>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li routerLink="admin" routerLinkActive="active">
-          <a routerLink="home" routerLinkActive="active">
-            <mat-icon>admin_panel_settings</mat-icon>
-            <span>Admin</span>
-          </a>
-        </li>
-      </ul>
-    </mat-sidenav>
-    <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
-  </mat-sidenav-container>
+<abc-pm-nav-bar></abc-pm-nav-bar>
 </main>
+-->

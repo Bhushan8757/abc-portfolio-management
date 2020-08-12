@@ -7,12 +7,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatGridListModule } from '@angular/material/grid-list';
 
-import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
-import { SideNavComponent } from './layout/side-nav/side-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatListModule } from '@angular/material/list';
+import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 
 @NgModule({
-  declarations: [MainLayoutComponent, SideNavComponent],
+  declarations: [NavBarComponent],
   imports: [
     // vendor
     BrowserModule,
@@ -25,7 +27,10 @@ import { SideNavComponent } from './layout/side-nav/side-nav.component';
     MatMenuModule,
     MatIconModule,
     MatSidenavModule,
+    LayoutModule,
+    MatListModule,
+    MatGridListModule,
   ],
-  exports: [MainLayoutComponent],
+  exports: [NavBarComponent],
 })
 export class CoreModule {}
